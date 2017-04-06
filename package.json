@@ -1,0 +1,19 @@
+{
+  "name": "smartstatus",
+  "version": "1.0.0",
+  "description": "status information in TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/pkunz/smartstatus.git"
+  },
+  "author": "Lossless GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/pkunz/smartstatus/issues"
+  },
+  "homepage": "https://gitlab.com/pkunz/smartstatus#README"
+}
