@@ -1,6 +1,6 @@
 import { HttpStatus, TStatusGroup } from './smartstatus.classes.http'
 
-export class error400 extends HttpStatus {
+export class status400 extends HttpStatus {
   constructor () {
       super({
         code: 400,
@@ -11,27 +11,7 @@ export class error400 extends HttpStatus {
 
 }
 
-export class error402 extends HttpStatus {
-  constructor () {
-      super({
-        code: 402,
-        text: 'Payment Required',
-        description: `The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource.`
-      })
-  }
-}
-
-export class error403 extends HttpStatus {
-  constructor () {
-      super({
-        code: 403,
-        text: 'Forbidden',
-        description: `The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource.`
-      })
-  }
-}
-
-export class error401 extends HttpStatus {
+export class status401 extends HttpStatus {
   constructor () {
       super({
         code: 401,
@@ -43,7 +23,29 @@ export class error401 extends HttpStatus {
 
 }
 
-export class error404 extends HttpStatus {
+export class status402 extends HttpStatus {
+  constructor () {
+      super({
+        code: 402,
+        text: 'Payment Required',
+        description: `The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource.`
+      })
+  }
+}
+
+export class status403 extends HttpStatus {
+  constructor () {
+      super({
+        code: 403,
+        text: 'Forbidden',
+        description: `The request was valid, but the server is refusing action. The user might not have the necessary permissions for a resource.`
+      })
+  }
+}
+
+
+
+export class status404 extends HttpStatus {
   constructor () {
       super({
         code: 404,
