@@ -13,6 +13,16 @@ export class status200 extends HttpStatus {
   }
 }
 
+export class status201 extends HttpStatus {
+  constructor () {
+      super({
+        code: 201,
+        text: 'Created',
+        description: `The request has been fulfilled, resulting in the creation of a new resource.`
+      })
+  }
+}
+
 export class status202 extends HttpStatus {
   constructor () {
       super({
