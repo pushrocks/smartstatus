@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "status information in TypeScript",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "(npmts)"
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://gitlab.com/pkunz/smartstatus/issues"
   },
-  "homepage": "https://gitlab.com/pkunz/smartstatus#README"
+  "homepage": "https://gitlab.com/pkunz/smartstatus#README",
+  "devDependencies": {
+    "tapbundle": "^1.0.5"
+  }
 }

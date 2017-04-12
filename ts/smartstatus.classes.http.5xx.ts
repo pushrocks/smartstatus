@@ -1,6 +1,6 @@
 import { HttpStatus, TStatusGroup } from './smartstatus.classes.http'
 
-export class error500 extends HttpStatus {
+export class status500 extends HttpStatus {
   constructor () {
       super({
         code: 500,
