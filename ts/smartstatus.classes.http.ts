@@ -2,12 +2,12 @@ export type TStatusGroup = 'clientError' | 'serverError';
 
 export class HttpStatus {
   protected static statusMap: {[key:string]: HttpStatus} = {};
-  public static getHttpStatusByString (codeArg: number) {
-    return HttpStatus.statusMap[codeArg.toString()];
+  public static getHttpStatusByString (codeStringArg: string) {
+    return HttpStatus.statusMap[codeStringArg];
   }
-  code: number;
-  text: string;
-  description: string;
+  public code: number;
+  public text: string;
+  public description: string;
   constructor(optionsArg: { code: number; text: string; description: string }) {
     this.code = optionsArg.code;
     this.text = optionsArg.text;
