@@ -1,6 +1,6 @@
 {
   "name": "@pushrocks/smartstatus",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": false,
   "description": "status information in TypeScript",
   "main": "dist/index.js",
