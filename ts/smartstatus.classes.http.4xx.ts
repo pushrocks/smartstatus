@@ -64,7 +64,7 @@ HttpStatus.addStatus('404', Status404);
 export class Status429 extends HttpStatus {
   constructor() {
     super({
-      code: 404,
+      code: 429,
       text: 'Too Many Requests',
       description: `The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.`
     });
