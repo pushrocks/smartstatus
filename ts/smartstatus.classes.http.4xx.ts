@@ -1,6 +1,6 @@
 import { HttpStatus, TStatusGroup } from './smartstatus.classes.http';
 
-export class status400 extends HttpStatus {
+export class Status400 extends HttpStatus {
   constructor() {
     super({
       code: 400,
@@ -9,8 +9,10 @@ export class status400 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('400', Status400);
 
-export class status401 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status401 extends HttpStatus {
   constructor() {
     super({
       code: 401,
@@ -20,8 +22,10 @@ export class status401 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('401', Status401);
 
-export class status402 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status402 extends HttpStatus {
   constructor() {
     super({
       code: 402,
@@ -30,8 +34,10 @@ export class status402 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('402', Status402);
 
-export class status403 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status403 extends HttpStatus {
   constructor() {
     super({
       code: 403,
@@ -40,8 +46,10 @@ export class status403 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('403', Status403);
 
-export class status404 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status404 extends HttpStatus {
   constructor() {
     super({
       code: 404,
@@ -50,3 +58,16 @@ export class status404 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('404', Status404);
+
+// tslint:disable-next-line: max-classes-per-file
+export class Status429 extends HttpStatus {
+  constructor() {
+    super({
+      code: 404,
+      text: 'Too Many Requests',
+      description: `The user has sent too many requests in a given amount of time. Intended for use with rate-limiting schemes.`
+    });
+  }
+}
+HttpStatus.addStatus('429', Status429);

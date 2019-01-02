@@ -1,6 +1,6 @@
 import { HttpStatus, TStatusGroup } from './smartstatus.classes.http';
 
-export class status200 extends HttpStatus {
+export class Status200 extends HttpStatus {
   constructor() {
     super({
       code: 200,
@@ -12,8 +12,10 @@ export class status200 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('200', Status200);
 
-export class status201 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status201 extends HttpStatus {
   constructor() {
     super({
       code: 201,
@@ -22,8 +24,10 @@ export class status201 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('201', Status201);
 
-export class status202 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status202 extends HttpStatus {
   constructor() {
     super({
       code: 202,
@@ -33,8 +37,10 @@ export class status202 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('202', Status202);
 
-export class status203 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status203 extends HttpStatus {
   constructor() {
     super({
       code: 203,
@@ -44,8 +50,10 @@ export class status203 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('203', Status203);
 
-export class status204 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status204 extends HttpStatus {
   constructor() {
     super({
       code: 204,
@@ -54,8 +62,10 @@ export class status204 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('204', Status204);
 
-export class status205 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status205 extends HttpStatus {
   constructor() {
     super({
       code: 205,
@@ -65,8 +75,10 @@ export class status205 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('205', Status205);
 
-export class status206 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status206 extends HttpStatus {
   constructor() {
     super({
       code: 206,
@@ -78,8 +90,10 @@ export class status206 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('206', Status206);
 
-export class status207 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status207 extends HttpStatus {
   constructor() {
     super({
       code: 207,
@@ -90,8 +104,10 @@ export class status207 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('207', Status207);
 
-export class status208 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status208 extends HttpStatus {
   constructor() {
     super({
       code: 208,
@@ -102,8 +118,10 @@ export class status208 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('208', Status208);
 
-export class status226 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status226 extends HttpStatus {
   constructor() {
     super({
       code: 226,
@@ -114,3 +132,4 @@ export class status226 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('226', Status226);

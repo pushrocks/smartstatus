@@ -1,9 +1,13 @@
 export type TStatusGroup = 'clientError' | 'serverError';
 
 export class HttpStatus {
-  protected static statusMap: {[key:string]: HttpStatus} = {};
-  public static getHttpStatusByString (codeStringArg: string) {
-    return HttpStatus.statusMap[codeStringArg];
+  public static statusMap: {[key:string]: any} = {};
+  public static addStatus (statusStringArg: string, statusArg: any) {
+    HttpStatus.statusMap[statusStringArg] = statusArg;
+  }
+  public static getHttpStatusByString (codeStringArg: string): HttpStatus {
+    const statusInstance =  new (HttpStatus.statusMap[codeStringArg])();
+    return statusInstance;
   }
   public code: number;
   public text: string;
@@ -12,7 +16,6 @@ export class HttpStatus {
     this.code = optionsArg.code;
     this.text = optionsArg.text;
     this.description = optionsArg.description;
-    HttpStatus.statusMap[this.code.toString()] = this;
   }
 }
 

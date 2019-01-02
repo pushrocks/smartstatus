@@ -1,6 +1,6 @@
 import { HttpStatus, TStatusGroup } from './smartstatus.classes.http';
 
-export class status100 extends HttpStatus {
+export class Status100 extends HttpStatus {
   constructor() {
     super({
       code: 100,
@@ -17,8 +17,9 @@ export class status100 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('100', Status100);
 
-export class status101 extends HttpStatus {
+export class Status101 extends HttpStatus {
   constructor() {
     super({
       code: 101,
@@ -27,8 +28,9 @@ export class status101 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('101', Status101);
 
-export class status102 extends HttpStatus {
+export class Status102 extends HttpStatus {
   constructor() {
     super({
       code: 102,
@@ -41,3 +43,4 @@ export class status102 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('102', Status102);

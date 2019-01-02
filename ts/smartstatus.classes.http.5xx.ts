@@ -1,6 +1,6 @@
 import { HttpStatus, TStatusGroup } from './smartstatus.classes.http';
 
-export class status500 extends HttpStatus {
+export class Status500 extends HttpStatus {
   constructor() {
     super({
       code: 500,
@@ -10,8 +10,10 @@ export class status500 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('500', Status500);
 
-export class status501 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status501 extends HttpStatus {
   constructor() {
     super({
       code: 501,
@@ -20,8 +22,10 @@ export class status501 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('501', Status501);
 
-export class status502 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status502 extends HttpStatus {
   constructor() {
     super({
       code: 502,
@@ -30,8 +34,10 @@ export class status502 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('502', Status502);
 
-export class status503 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status503 extends HttpStatus {
   constructor() {
     super({
       code: 503,
@@ -40,8 +46,10 @@ export class status503 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('503', Status503);
 
-export class status504 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status504 extends HttpStatus {
   constructor() {
     super({
       code: 504,
@@ -51,8 +59,10 @@ export class status504 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('504', Status504);
 
-export class status505 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status505 extends HttpStatus {
   constructor() {
     super({
       code: 505,
@@ -61,8 +71,10 @@ export class status505 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('505', Status505);
 
-export class status506 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status506 extends HttpStatus {
   constructor() {
     super({
       code: 506,
@@ -72,7 +84,10 @@ export class status506 extends HttpStatus {
   }
 }
 
-export class status507 extends HttpStatus {
+HttpStatus.addStatus('506', Status506);
+
+// tslint:disable-next-line: max-classes-per-file
+export class Status507 extends HttpStatus {
   constructor() {
     super({
       code: 507,
@@ -82,7 +97,10 @@ export class status507 extends HttpStatus {
   }
 }
 
-export class status508 extends HttpStatus {
+HttpStatus.addStatus('507', Status507);
+
+// tslint:disable-next-line: max-classes-per-file
+export class Status508 extends HttpStatus {
   constructor() {
     super({
       code: 508,
@@ -91,8 +109,10 @@ export class status508 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('508', Status508);
 
-export class status510 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status510 extends HttpStatus {
   constructor() {
     super({
       code: 510,
@@ -102,7 +122,8 @@ export class status510 extends HttpStatus {
   }
 }
 
-export class status511 extends HttpStatus {
+// tslint:disable-next-line: max-classes-per-file
+export class Status511 extends HttpStatus {
   constructor() {
     super({
       code: 511,
@@ -113,3 +134,4 @@ export class status511 extends HttpStatus {
     });
   }
 }
+HttpStatus.addStatus('511', Status511);
